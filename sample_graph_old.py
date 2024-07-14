@@ -46,27 +46,6 @@ def create_nodes(points, num_points, edges, angles, indices):
         nodes.append(node)
     return nodes
 
-class VectorCache():
-    def __init__(self, nodes):
-        vectors = set()
-        for node in nodes:
-            for angle in node['angles']:
-                vectors.add((node['position'], angle))å
-
-        self.vectors = vectors
-
-    def get_vectors
-
-    def add_vector(self, vector):
-        self.vectors.append(vector)
-
-def create_vectors(nodes):
-    vectors = []
-
-    return vectors
-
-    
-
 def print_sample_nodes(nodes):
     print("Sample nodes:")
     for i in range(min(5, len(nodes))):
@@ -189,7 +168,7 @@ def calculate_best_score(curr_nodes):
     print(f"Score: {best_score}")
     print(f"Angle: {best_angle}")
 
-
+    
 
     return best_score, best_node1, best_node2, best_angle
 
@@ -201,7 +180,7 @@ def main():
 
     print(remaining_nodes)
 
-    print_sample_nodes(remaining_nodes)
+    # print_sample_nodes(remaining_nodes)
     plot_points_and_edges(points, edges)
 
     # sample 3 nodes

@@ -168,7 +168,6 @@ def calculate_best_score(curr_nodes):
     print(f"Score: {best_score}")
     print(f"Angle: {best_angle}")
 
-    
 
     return best_score, best_node1, best_node2, best_angle
 
